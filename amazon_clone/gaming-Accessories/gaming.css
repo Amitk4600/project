@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  border: border-box;
+}
+
+.nav-bar {
+  width: 1495;
+  height: 60px;
+  background-color: #0f1111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-logo {
+  width: 100px;
+  height: 50px;
+}
+.logo {
+  width: 100%;
+  height: 50px;
+  background-image: url("../assets/amazon_logo.png");
+  background-size: cover;
+}
+.border {
+  border: 1px solid transparent;
+}
+.border:hover {
+  border: 1px solid white;
+}
+
+/* Address and Location */
+.nav-add {
+  padding: 5px;
+}
+.deliver {
+  font-size: 0.8rem;
+  width: 100px;
+  height: 14px;
+  color: #cccccc;
+  margin: 1px 16px;
+  position: relative;
+  top: 5px;
+}
+.location {
+  font-size: 1rem;
+  height: 16px;
+  color: #ffff;
+  margin-left: 4px;
+  padding: 0 0 1px;
+  position: relative;
+  top: -3px;
+}
+.nav-add-icon {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  position: relative;
+  top: -5px;
+}
+/* search box */
+.nav-search {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: aqua;
+  width: 650px;
+  height: 45px;
+  border-radius: 5px;
+}
+.nav-search:hover {
+  border: 2px solid #febd68;
+}
+.search-all {
+  background-color: #f3f3f3;
+  width: 50px;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+  border: none;
+}
+.search-input {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+}
+.search-icon {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: #febd68;
+  color: #0f1111;
+  border-radius: 0 5px 5px 0;
+}
+/* Sign-in */
+span {
+  font-size: 0.8rem;
+}
+.nav-bottom-text {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* cart */
+.nav-cart i {
+  font-size: 25px;
+}
+.nav-cart a {
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* progressive content panel */
+.progressive-content {
+  height: 40px;
+  background-color: #222f3d;
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  align-items: center;
+  padding-left: 60px;
+}
+.progressive-content-all-option p {
+  display: inline;
+  margin-left: 15px;
+}
+.progressive-content-all-option {
+  width: 70%;
+  font-size: 0.8rem;
+}
+/* banner */
+
+.banner img {
+  width: 1496px;
+  height: 295px;
+}
+
+/* game section  */
+.main-section {
+  background-color: #febd68;
+}
+.main-game-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  border: 2px solid red;
+
+}
+
+/* }
+.games {
+  display: flex;
+  justify-content: center;
+  
+  background-color: rgb(246, 250, 250);
+  flex-direction: row;
+}
+.left-section{
+    
+    
+}
+img {
+    border-radius: 6px;
+   /* display: flex; */
+     /* justify-content: space-evenly;  */
+  /*width: 150px;
+  padding: 15px;
+  margin: 15px;
+  background-color: #cccccc;
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+
+}
+.right-section h2 {
+    font-display: ;
+} */
+
+/* cart.css */
+/* cart.css */
+
+.games {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .left-section {
+    flex: 0 0 150px;
+    margin-right: 20px;
+    animation-name: zoom-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes zoom-in {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .left-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(3deg);
+    }
+  }
+  
+  .right-section {
+    flex-grow: 1;
+  }
+  
+  .right-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .price span {
+    font-size: 14px;
+    margin-right: 2px;
+  }
+  
